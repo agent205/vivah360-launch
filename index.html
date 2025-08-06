@@ -6,10 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      background: #fff8f2;
+      background: url('https://i.imgur.com/6Vt4S7Z.png'); /* floral soft background */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
       font-family: 'Segoe UI', sans-serif;
       text-align: center;
       padding: 50px;
+      color: #333;
     }
     h1 {
       font-size: 40px;
@@ -25,6 +29,17 @@
       font-size: 20px;
       color: #555;
     }
+    .calendar-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #cc3366;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 16px;
+    }
   </style>
 </head>
 <body>
@@ -32,8 +47,13 @@
   <div id="countdown"></div>
   <p class="tagline">तुझं लग्न, आमचं प्लॅनिंग! ❤️</p>
 
+  <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Vivah360+Launch+Event&dates=20250901T000000/20250901T010000&details=Join+us+for+the+official+launch+of+Vivah360.+One+platform+for+all+wedding+needs!&sf=true&output=xml"
+     target="_blank"
+     class="calendar-button">
+    📅 Add to Google Calendar
+  </a>
+
   <script>
-    // Set your target launch date below
     const launchDate = new Date("September 1, 2025 00:00:00").getTime();
 
     const timer = setInterval(function() {
